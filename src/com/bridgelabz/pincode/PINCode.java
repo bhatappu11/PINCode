@@ -18,7 +18,7 @@ public class PINCode {
 	}
 
 	private static boolean checkForValidPinCode(String pinCode) {
-		String regex = "[0-9]{6}";
+		String regex = "^[0-9]{6}";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(pinCode);
 		return matcher.matches();
